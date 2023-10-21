@@ -22,6 +22,15 @@ a{
     display: block;
 }
 
+#scroller{
+    height: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    z-index: 99;
+}
+
 html{
     scroll-behavior: smooth;
 }
