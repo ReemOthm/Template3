@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <span id="up">^</span>
     <div id="scroller"></div>
     <header>
         <div class="container">
@@ -508,25 +509,25 @@
                 <div class="prog-holder">
                     <h4>HTML</h4>
                     <div class="prog" data-progress="80%">
-                        <span style="width: 80%;"></span>
+                        <span style="width: 0;"></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>CSS</h4>
                     <div class="prog"  data-progress="85%">
-                        <span style="width: 85%;"></span>
+                        <span></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>Javascript</h4>
                     <div class="prog" data-progress="70%">
-                        <span style="width: 70%;"></span>
+                        <span style="width: 0;"></span>
                     </div>
                 </div>
                 <div class="prog-holder">
                     <h4>Python</h4>
                     <div class="prog" data-progress="80%">
-                        <span style="width: 80%;"></span>
+                        <span style="width: 0"></span>
                     </div>
                 </div>
             </div>
@@ -581,10 +582,22 @@
                     <img src="images/events.png" alt="">
                     <div class="text">
                         <ul>
-                            <li>0- 194<span>Days</span></li>
-                            <li>0- 8<span>Hours</span></li>
-                            <li>0- 47<span>Minutes</span></li>
-                            <li>0- 27<span>Seconds</span></li>
+                            <li>
+                                <span class="days"></span>
+                                <span>Days</span>
+                            </li>
+                            <li>
+                                <span class="hours"></span>
+                                <span>Hours</span>
+                            </li>
+                            <li>
+                                <span class="minutes"></span>
+                                <span>Minutes</span>
+                            </li>
+                            <li>
+                                <span class="seconds"></span>
+                                <span>Seconds</span>
+                            </li>
                         </ul>
                         <h3>Tech Masters Event 2021</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
@@ -683,22 +696,22 @@
         <div class="container">
             <div class="box">
                 <i class="fa-solid fa-user fa-2w"></i>
-                <div>150</div>
+                <div class="number" data-num="150">0</div>
                 <span>Clients</span>
             </div>
             <div class="box">
                 <i class="fa-solid fa-code"></i>
-                <div>135</div>
+                <div class="number" data-num="135">0</div>
                 <span>Projects</span>
             </div>
             <div class="box">
                 <i class="fa-solid fa-earth-americas"></i>
-                <div>50</div>
+                <div class="number" data-num="50">0</div>
                 <span>Countries</span>
             </div>
             <div class="box">
                 <i class="fa-solid fa-money-bill"></i>
-                <div>500</div>
+                <div class="number" data-num="500">0</div>
                 <span>Money</span>
             </div>
         </div>

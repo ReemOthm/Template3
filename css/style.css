@@ -22,6 +22,26 @@ a{
     display: block;
 }
 
+#up{
+    position: fixed;
+    bottom: 50px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3484c2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    transition:  1s;
+    cursor: pointer;
+    z-index: 20;
+}
+#up.show{
+    right: 30px;
+}
 #scroller{
     height: 7px;
     position: fixed;
@@ -1142,7 +1162,9 @@ header .megamenu .links li a{
 
 .skills .prog-holder .prog span {
     display: block;
+    width: 0;
     height: inherit;
+    transition: width 0.3s linear;
     background-color: var(--main-color);
     position: relative;
 }
@@ -1319,7 +1341,7 @@ header .megamenu .links li a{
     font-weight: normal;
     font-size: small;
     color: #777;
-    margin-top: 20px;
+    margin-top: 37px;
 }
 
 
